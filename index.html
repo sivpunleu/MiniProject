@@ -10,7 +10,27 @@
     <title>Document</title>
   </head>
  <body>
- <header></header>
+ <header>
+   <nav class="navbar navbar-expand-lg site-header">
+     <div class="container">
+       <a class="navbar-brand site-logo" href="#">ENOLA</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+         <ul class="site-nav navbar-nav ms-auto  ">
+           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+           <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+           <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+           <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
  <main>
      <!-- my -->
     <section></section>
@@ -21,7 +41,50 @@
    <!-- vannda -->
     <section></section>
  </main>
- <footer></footer>
+ <footer class="site-footer mt-5 bg-dark">
+   <div class="footer-top py-5">
+     <div class="container">
+       <div class="row text-white">
+         <div class="col-md-3 mb-4">
+           <h5 class="footer-brand">ENOLA</h5>
+           <p class="small">Full Stack Developer passionate about building responsive web applications and beautiful user interfaces.</p>
+         </div>
+         <div class="col-md-3 mb-4">
+           <h6 class="footer-heading">LINKS</h6>
+           <ul class="list-unstyled footer-links">
+             <li><a href="#">Home</a></li>
+            <li><a href="#about" class="underline">About</a></li>
+            <li><a href="#project" class="underline">Projects</a></li>
+            <li><a href="#contact" class="underline">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="footer-heading">FOLLOW ME</h6>
+          <div class="social-icons mt-2">
+            <a href="#" class="me-2"><i class="bi bi-github"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="footer-heading">CONTACT</h6>
+          <ul class="list-unstyled contact-list mt-2">
+            <li><i class="bi bi-envelope-fill me-2"></i>enola@example.com</li>
+            <li><i class="bi bi-telephone-fill me-2"></i>+855 12 345 678</li>
+            <li><i class="bi bi-geo-alt-fill me-2"></i>Phnom Penh, Cambodia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom py-4 border-bottom border-top border-secondary">
+    <div class="container text-center text-white-50">
+      © 2025 ENOLA. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
   </body>
     <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
 
