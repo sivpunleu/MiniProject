@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(67, 65, 65)!important;
+}
+/* var color */
+:root{
+    --main-color: rgb(255, 255, 255);
+    --second-color: rgb(0, 0, 0);
+    --hover-color: rgb(255, 0, 0);
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size: 16px;
+    --font-weight: 400;
+    --line-height: 1.5;
+    --text-align: left;
+    --text-decoration: none;
+    --text-transform: none;
+}
+/* global style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    text-align: var(--text-align);
+    text-decoration: var(--text-decoration);
+    text-transform: var(--text-transform);
+    color: var(--main-color);
+}
+
