@@ -29,6 +29,24 @@ body {
   color: var(--main-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+/* kimhak */
+
+.line-wave{
+    width: 15% !important;
+}
+    
+
+
 /* Bootstrap navbar adjustments */
 .navbar.site-header {
   background: #dfeeff; /* pale blue */
@@ -140,3 +158,4 @@ li>a {
     padding: 8px 4px;
     position: relative;
 }
+
