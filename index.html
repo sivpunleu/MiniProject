@@ -33,6 +33,69 @@
    </nav>
  </header>
  <main>
+     <!-- my -->
+      <section id="home" style="background-color:#f8eeea">
+      <div class="herobanner ">
+        <div class="container">
+          <div class="row justify-content-center align-items-center d-flex">
+            <div class="col-lg-6">
+              <div class="text-center align-items-center ms-5 mt-5 ">
+                <div class="text-center text-lg-start">
+                  <span class="badge text-danger fs-3 top-0"><i class="fa-solid fa-heart-pulse fa-fade" style="color: #cb1515;"></i></span>
+                  <h6 class="text-black">Hi, This is <span class="text-danger text-decoration-underline name-s"> Name</span></h6>
+                  <h1 class="text-black">I'm Junior
+                    <span class="text-danger auto-type"></span>
+                  </h1>
+                  <p class="lead text-black ">Based in _____, Cambodia.</p>
+                  </div>
+                  <div class="category-tabs d-flex justify-content-center justify-content-lg-start gap-2">
+                    <a href="#" class="btn g-btn hvr-bounce-to-top p-4 bg-secondary-subtle rounded-4"><span class="fs-2 fw-semibold text-dark">10+
+                      </span>
+                       <p class="fs-s text-secondary">Projects completed</p>
+                      </a>
+                    <a href="#" class="btn g-btn  hvr-bounce-to-top p-4 bg-secondary-subtle rounded-4"><span class="fs-2 fw-semibold text-black">2+ 
+                    </span>
+                    <p class="fs-s text-secondary">Years Experience</p>
+
+                  </a>
+                    <a href="#" class="btn g-btn hvr-bounce-to-top p-4 bg-secondary-subtle rounded-4"><span class="fs-2 fw-semibold text-black">0+ 
+                    </span>
+                   <p class="fs-s text-secondary">Happy Client</p>
+
+                  </a>
+                  
+                  </div>
+                  <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                    <a href="#" class="btn bg-primary text-white mt-3">Hire Me <i class="fa-solid fa-arrow-right fa-fade"></i></a>
+                    <a href="#" class="btn  btn-outline-primary  text-black mt-3">Download CV</a>
+                  </div>
+                  <div class="d-flex flex-row mt-3 ms-3">
+                    <a class="btn px-1 py-2 rounded-circle bg-secondary align-items-center " href="#"> <i class="fa-brands fa-telegram fa-fade  fa-xl " style="color: #74C0FC;"></i></a>
+                    <a class="btn px-1 py-2 rounded-circle bg-secondary align-items-center ms-2 " href="#"> <i class="fa-brands fa-facebook fa-fade fa-xl" style="color: #74C0FC;" ></i></a>
+                    <a class="btn px-2 py-2 rounded-circle bg-secondary align-items-center ms-2 " href="#"> <i class="fa-brands fa-github fa-fade fa-lg" style="color: #74C0FC;"></i></a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 bg-lg-none d-block mt-3 d-flex justify-content-center align-items-center">
+              <div class="card mt-5  shadow-p shadow-lg d-flex justify-content-center align-items-center bg-danger-subtle position-relative" style="width: 310px; height: 410px;">
+                
+                <!-- image -->
+                <img src="asset/img/photo_2025-10-13_16-38-48.jpg" alt="images"
+                  class=" img   object-fit-cover rounded-2" style="width: 300px; height: 400px;">
+                  <span class="badge  be-1 fw-light fs-6 top-25 start-0 p-3    position-absolute"><i class="fa-solid fa-web-awesome fa-beat-fade" style="color: #e4f70f;"></i> Responsive</span>
+                  <span class="badge be-2 fw-light fs-6 top-25  p-3    position-absolute">
+                    <i class="fa-solid fa-code fa-bounce text-primary"></i>
+                     Clean Code</span>
+                  <span class="badge be-3 fw-light fs-6 top-25  p-3    position-absolute">
+                    <i class="fa-solid fa-spinner fa-spin-pulse "></i>
+                    Fast Loading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- kimhak about-->
     <section class="bg-info-subtle py-10">
       <div class="container">
@@ -561,11 +624,49 @@
 </footer>
 
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="asset/js/autotype.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();
 </script>
 
+ <script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  }) 
+  
+  const darkModeBtn = document.getElementById('darkmode');
+  const darkIcon = document.getElementById('darkmode-icon');
+  const lightIcon = document.getElementById('lightmode-icon');
+
+  function enableDarkMode() {
+    document.body.classList.add('bg-dark', 'text-white');
+    darkIcon.style.display = 'inline-block';
+    lightIcon.style.display = 'inline-block';
+  }
+
+  function disableDarkMode() {
+    document.body.classList.remove('bg-dark', 'text-white');
+    darkIcon.style.display = 'inline-block';
+    lightIcon.style.display = 'inline-block';
+  }
+
+  // Initial state: show both icons
+  darkIcon.style.display = 'inline-block';
+  lightIcon.style.display = 'inline-block';
+
+  darkModeBtn.addEventListener('click', function () {
+    if (document.body.classList.contains('bg-dark')) {
+      disableDarkMode();
+    } else {
+      enableDarkMode();
+    }
+  });
+</script>
 </html>
+
