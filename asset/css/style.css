@@ -1,6 +1,7 @@
 body {
   background-color: rgb(240, 237, 237) !important;
 }
+
 /* var color */
 :root {
   --main-color: rgb(255, 255, 255);
@@ -14,6 +15,7 @@ body {
   --text-decoration: none;
   --text-transform: none;
 }
+
 /* global style */
 * {
   margin: 0;
@@ -155,3 +157,115 @@ li>a {
     position: relative;
 }
 
+/* Tong Skills page */
+.skill-card {
+    border-radius: 12px;
+    border-top: 3px solid var(--bs-primary);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.skill-header {
+    margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    background: #e8f0fe;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.skill-icon i {
+    font-size: 24px;
+    color: var(--bs-primary);
+}
+
+.skill-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin: 0;
+}
+
+.skill-item {
+    margin-bottom: 1.25rem;
+    /* A bit more than Bootstrap's mb-3 */
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--bs-primary), #1d4ed8);
+    border-radius: 10px;
+}
+
+.stat-item {
+    margin-bottom: 1.5rem;
+    /* Corresponds to Bootstrap's mb-4 */
+}
+
+.stat-item:last-child {
+    margin-bottom: 0;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.stat-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.stat-content h3 {
+    font-size: 1.8rem;
+    color: var(--bs-primary);
+    margin-bottom: 5px;
+}
+
+.stat-content p {
+    margin: 0;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.cert-badge {
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cert-badge:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
