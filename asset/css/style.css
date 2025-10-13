@@ -1,34 +1,160 @@
 body {
-    background-color: rgb(67, 65, 65) !important;
+  background-color: rgb(240, 237, 237) !important;
 }
 
 /* var color */
 :root {
-    --main-color: rgb(255, 255, 255);
-    --second-color: rgb(0, 0, 0);
-    --hover-color: rgb(255, 0, 0);
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-size: 16px;
-    --font-weight: 400;
-    --line-height: 1.5;
-    --text-align: left;
-    --text-decoration: none;
-    --text-transform: none;
+  --main-color: rgb(255, 255, 255);
+  --second-color: rgb(0, 0, 0);
+  --hover-color: rgb(255, 0, 0);
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.5;
+  --text-align: left;
+  --text-decoration: none;
+  --text-transform: none;
 }
 
 /* global style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: var(--font-weight);
-    line-height: var(--line-height);
-    text-align: var(--text-align);
-    text-decoration: var(--text-decoration);
-    text-transform: var(--text-transform);
-    color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  text-align: var(--text-align);
+  text-decoration: var(--text-decoration);
+  text-transform: var(--text-transform);
+  color: var(--main-color);
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #d9eafd;
+}
+
+/* kimhak */
+
+.line-wave{
+    width: 15% !important;
+}
+    
+
+
+/* Bootstrap navbar adjustments */
+.navbar.site-header {
+  background: #dfeeff; /* pale blue */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.navbar .site-logo {
+  color: #6c42f5 !important;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.navbar .nav-link:hover {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.navbar .nav-link.active {
+  color: rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #6c42f5;
+  bottom: -12px;
+  width: 60%;
+  border-radius: 2px;
+}
+
+@media (max-width: 991px) {
+  .navbar .site-logo {
+    font-size: 22px;
+  }
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* Header styles */
+.site-header {
+  background: #dfeeff; /* pale blue */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+.site-logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #6c42f5; /* purple */
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.site-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.site-nav a {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 4px;
+  position: relative;
+}
+.site-nav a:hover {
+  color: rgba(0, 0, 0, 0.85);
+}
+/* active underline */
+.site-nav a.active {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
+.site-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #6c42f5; /* purple underline */
+  bottom: -12px;
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 2px;
+}
+/* responsive */
+@media (max-width: 700px) {
+  .site-header .container {
+    padding: 14px 16px;
+  }
+  .site-nav {
+    gap: 14px;
+  }
+  .site-logo {
+    font-size: 22px;
+  }
+}
+li>a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 4px;
+    position: relative;
 }
 
 /* Tong Skills page */
